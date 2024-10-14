@@ -1,101 +1,60 @@
-import Image from "next/image";
+// src/app/page.js
+"use client";
+import React from 'react';
+import { Parallax } from '../components/Parallax';
+import { Section } from '../components/Section';
+import { ImageText } from '../components/ImageText';
+import { Button } from '../components/Button';
 
-export default function Home() {
+export default function Home() { 
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="min-h-screen" style={{overflow: "scroll"}}>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      <Parallax background="/images/event.jpg">
+        <h1 className="text-7xl mb-4 tracking-extra-widest text-center leading-normal">Game Theory<br/><At/>IIITH</h1>
+        <p className="text-xl mb-8 cinzel">Shuffle up and deal!</p>
+      </Parallax>
+
+      <Main/>
+
+      <footer className="p-4 mt-8 text-center" style={{background: "var(--bg-secondary)"}}>
+        <p>&copy; 2024 Game Theory@IIITH. All rights reserved.</p>
       </footer>
+
     </div>
+  );
+}
+
+const Main = () => {
+  return (
+    <div className="max-w-[874px] mx-auto">
+      <Section title="Game Theory">
+        Join us for exciting tournaments, friendly games, and opportunities to improve your poker skills.
+        Whether you're a beginner or a seasoned player, there's a seat at our table for you! 
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius ratione quae voluptate praesentium architecto tempore ut ipsum delectus tempora sit! Repellendus, delectus. Illum error doloremque eius magnam aperiam aliquam dolorum?
+      </Section>
+      <Section title="Events">
+        Poker tournaments every Wednesday.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quia non nesciunt molestias eos minima, repellendus quis repellat inventore omnis corrupti error! Suscipit, magni ab eveniet obcaecati nam aut quasi?
+      </Section>
+      <Section title="placeholder1">
+        <ImageText src="/images/placeholder.png" alt="Poker Table" ratio='1:2'>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, sit ipsum? Itaque accusantium perspiciatis nemo cupiditate fuga amet exercitationem, deleniti placeat a praesentium quod id reprehenderit distinctio molestiae consequatur atque.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam animi quas doloribus at sunt officia dicta et minus ipsum. Impedit molestiae error atque nemo doloremque saepe provident officia animi quia?
+          </p>
+          <Button onClick={() => console.log('Button clicked')} text="See More" />
+        </ImageText>
+      </Section>
+      <Section title="placeholder2">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque cum, ullam magni voluptate, porro possimus deleniti delectus veritatis doloremque quam eum amet provident aspernatur quo necessitatibus mollitia inventore, dignissimos soluta?
+      </Section>
+    </div>
+  );
+}
+
+const At = () => { 
+  return (
+    <span style={{fontFamily: "serif, 'Times New Roman', Times"}}>@</span>
   );
 }
