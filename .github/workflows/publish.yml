@@ -54,7 +54,7 @@ jobs:
     deploy:
         environment:
             name: github-pages
-            url: https://gametheory-iiith.github.io
+            url: https://gametheory-iiit.github.io
         runs-on: ubuntu-latest
         needs: build
         steps:
