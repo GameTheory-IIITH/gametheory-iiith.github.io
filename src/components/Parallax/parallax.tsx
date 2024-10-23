@@ -45,4 +45,4 @@ export const Parallax = ( {background, children}: ParallaxProps ) => {
       </div>
     </div>
   );
-}
+};
