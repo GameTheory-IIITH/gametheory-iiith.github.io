@@ -12,7 +12,7 @@ export default function Home() {
 
       <Parallax background="/images/event.jpg">
         <h1 className="text-7xl mb-4 tracking-extra-widest text-center leading-normal">Game Theory<br/><At/>IIITH</h1>
-        <p className="text-xl mb-8 cinzel">Shuffle up and deal!</p>
+        <p className="text-xl mb-8 cinzel">Shuffle up and deal.</p>
       </Parallax>
 
       <Main/>
@@ -30,7 +30,7 @@ const Main = () => {
     <div className="max-w-[874px] mx-auto">
       <Section title="Game Theory">
         Join us for exciting tournaments, friendly games, and opportunities to improve your poker skills.
-        Whether you're a beginner or a seasoned player, there's a seat at our table for you! 
+        Whether you&apos;re a beginner or a seasoned player, there&apos;s a seat at our table for you!
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius ratione quae voluptate praesentium architecto tempore ut ipsum delectus tempora sit! Repellendus, delectus. Illum error doloremque eius magnam aperiam aliquam dolorum?
       </Section>
       <Section title="Events">

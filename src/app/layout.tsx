@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -46,7 +47,7 @@ function Navbar() {
 function Leftitem() { // logo image that links to home page
   return (
     <a href="/">
-      <img src="/favicon.ico" alt="logo" className="h-14" />
+      <Image src="/images/favicon.ico" alt="logo" className="h-14 w-14" width={100} height={100} />
     </a>
   );
 }
