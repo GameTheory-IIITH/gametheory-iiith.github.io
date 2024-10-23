@@ -33,7 +33,7 @@ export const Parallax = ( {background, children}: ParallaxProps ) => {
         style={{
           backgroundImage: `url('${background}')`,
           transform: `translateY(${scrollY * 0.1}px)`,
-          filter: `blur(${2.5 + scrollY / 50}px) brightness(${100 - scrollY / 15}%)`,
+          filter: `blur(${3 + scrollY / 50}px) brightness(${100 - scrollY / 12}%)`,
         }}
       />
       <div className="absolute inset-0 bg-black opacity-50" />
