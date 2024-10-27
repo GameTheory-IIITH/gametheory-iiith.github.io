@@ -1,7 +1,7 @@
 .poker-button {
-  background-color: var(--bg-secondary);
-  border: 1px solid var(--fg);
-  color: var(--fg);
+  background-color: rgb(var(--bg-secondary));
+  border: 1px solid rgb(var(--fg-primary));
+  color: rgb(var(--fg-primary));
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -13,7 +13,7 @@
 }
 
 .poker-button:hover {
-  background-color: var(--fg);
-  color: var(--bg-secondary);
+  background-color: rgb(var(--fg-primary));
+  color: rgb(var(--bg-secondary));
 }
 

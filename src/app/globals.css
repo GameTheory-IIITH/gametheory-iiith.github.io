@@ -3,22 +3,24 @@
 @tailwind utilities;
 
 :root {
-  --fg: #ffffff;
-  --bg-primary: #171717;
-  --bg-secondary: #0a0a0a;
+  --fg-primary: 255, 255, 255; /* #ffffff */
+  --fg-secondary: 20, 20, 20;
+  --bg-primary: 23, 23, 23; /* #171717 */
+  --bg-secondary: 10, 10, 10; /* #0a0a0a */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg-primary: #0a0a0a;
-    --bg-secondary: #171717;
-    --fg: #ededed;
+    --bg-primary: 10, 10, 10; /* #0a0a0a */
+    --bg-secondary: 23, 23, 23; /* #171717 */
+    --fg-primary: 237, 237, 237; /* #ededed */
+    --fg-secondary: 215, 215, 215;
   }
 }
 
 body {
-  color: var(--fg);
-  background: var(--bg-primary);
+  color: rgb(var(--fg-primary));
+  background: rgb(var(--bg-primary));
 }
 
 h1, h2, h3, h4, h5, h6, .cinzel {
