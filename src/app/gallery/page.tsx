@@ -1,7 +1,7 @@
 import { Section } from "@/components/Section";
 import { ImageGallery } from "@/components/ImageGallery";
 
-export default function Home() {
+export default function Gallery() {
     return (
         <div className="max-w-[874px] mx-auto">
             <Section title="Gallery">
