@@ -1,5 +1,12 @@
-import { Section } from "@/components/Section";
-import { ImageGallery } from "@/components/ImageGallery";
+import dynamic from "next/dynamic";
+
+const Section = dynamic(() => import("@/components/Section"), {
+    ssr: false,
+});
+
+const ImageGallery = dynamic(() => import("@/components/ImageGallery"), {
+    ssr: false,
+});
 
 export default function Gallery() {
     return (

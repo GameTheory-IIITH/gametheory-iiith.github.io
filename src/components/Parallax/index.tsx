@@ -1,1 +1,2 @@
-export { Parallax } from './parallax';
+import { Parallax } from './parallax';
+export default Parallax;

@@ -1,13 +1,46 @@
 // src/app/page.js
 "use client";
 import React from 'react';
-import { Parallax } from '@/components/Parallax';
-import { Section } from '@/components/Section';
-import { ImageText } from '@/components/ImageText';
-import { Button } from '@/components/Button';
-import { ImageGallery } from '@/components/ImageGallery';
-import { Link } from '@/components/Link';
-import { FaInstagram } from 'react-icons/fa';
+import dynamic from 'next/dynamic';
+
+const Link = dynamic(() => import('@/components/Link'), {
+  ssr: false,
+});
+
+const Button = dynamic(() => import('@/components/Button'), {
+  ssr: false,
+});
+
+const ImageText = dynamic(() => import('@/components/ImageText'), {
+  ssr: false,
+});
+
+const Parallax = dynamic(() => import('@/components/Parallax'), {
+  ssr: false,
+});
+
+const Section = dynamic(() => import('@/components/Section'), {
+  ssr: false,
+});
+
+const ImageGallery = dynamic(() => import('@/components/ImageGallery'), {
+  ssr: false,
+});
+
+const FaInstagram = dynamic(() => import('react-icons/fa').then(mod => mod.FaInstagram), {
+  ssr: false,
+});
+
+const Instagram = () => (
+  <a href="https://www.instagram.com/gametheory_iiith" target="_blank" rel="noopener noreferrer" className="flex items-center no-underline">
+    <FaInstagram className="mr-2" /> gametheory_iiith
+  </a>
+);
+
+
+const At = () => (
+  <span style={{ fontFamily: "serif, 'Times New Roman', Times" }}>@</span>
+);
 
 export default function Home() { 
   return (
@@ -69,22 +102,9 @@ const Main = () => {
           <span>gametheoryiiith@gmail.com</span>
         </p>
         <p className="flex items-center justify-center">
-          <a href="https://www.instagram.com/gametheory_iiith" target="_blank" rel="noopener noreferrer" className="flex items-center no-underline">
-            <FaInstagram className="mr-2" /> gametheory_iiith
-          </a>
+          <Instagram />
         </p>
       </Section>
     </div>
   );
-}
-
-const At = () => { 
-  return (
-    <span style={{fontFamily: "serif, 'Times New Roman', Times"}}>@</span>
-  );
-}
-
-
-/* //TODO:
- * brief info cards for events, gallery, members, contact
-*/
+};

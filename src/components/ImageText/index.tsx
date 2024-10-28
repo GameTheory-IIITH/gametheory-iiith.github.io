@@ -1,1 +1,2 @@
-export { ImageText } from './imagetext';
+import { ImageText } from './imagetext';
+export default ImageText;
