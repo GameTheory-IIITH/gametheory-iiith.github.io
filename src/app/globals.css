@@ -18,6 +18,16 @@
   }
 }
 
+@layer utilities {
+  *::-webkit-scrollbar {
+    display: none;
+  }
+  * {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
 body {
   color: rgb(var(--fg-primary));
   background: rgb(var(--bg-primary)) !important;

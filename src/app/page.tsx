@@ -44,7 +44,7 @@ const At = () => (
 
 export default function Home() { 
   return (
-    <div className="min-h-screen" style={{overflow: "scroll"}}>
+    <div className="min-h-screen">
 
       <Parallax background="/images/event.jpg">
         <h1 className="text-7xl mb-4 tracking-extra-widest text-center leading-normal">Game Theory<br/><At/>IIITH</h1>
