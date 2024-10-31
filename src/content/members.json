@@ -9,8 +9,67 @@
             "link": "https://www.github.com/lohithkola06"
         },
         {
-            "name": "Kaushik Yadala",
+            "name": "Venkata Naga Sai Kaushik Yadala",
             "link": "https://www.github.com/kaushik-yadala"
+        }
+    ],
+    "events": [
+        {
+            "name": "Agyeya Singh Negi"
+        },
+        {
+            "name": "Pritika Sinharay"
+        },
+        {
+            "name": "Abhiroop Pullepu"
+        },
+        {
+            "name": "Kavish Vora"
+        },
+        {
+            "name": "Revan Reddy Pedaballi"
+        },
+        {
+            "name": "Kartik Thapa"
+        }
+    ],
+    "marketing": [
+        {
+            "name": "Aakarsh Mishra"
+        },
+        {
+            "name": "Lakshya Jindal"
+        },
+        {
+            "name": "Garima Mittal"
+        },
+        {
+            "name": "Joshita Dhanireddy"
+        },
+        {
+            "name": "Dhruv Bansal"
+        }
+    ],
+    "corporate": [
+        {
+            "name": "Vedant Tejas"
+        },
+        {
+            "name": "Naman Singhal"
+        },
+        {
+            "name": "Akshat Gupta"
+        },
+        {
+            "name": "Devansh Varshney"
+        },
+        {
+            "name": "Aryan Chaudhary"
+        }
+    ],
+    "editing": [
+        {
+            "name": "Aaryan Kashyap"
         }
     ]
 }
