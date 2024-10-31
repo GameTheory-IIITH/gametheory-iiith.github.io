@@ -26,7 +26,7 @@ export const Members = () => (
             </div>
         </Section>
 
-        <Section title="members">
+        <Section title="members" className="space-y-4">
             {Object.entries(teams).map(([team, members]) => (
                 <TeamDisplay key={team} members={members} teamName={team} />
             ))}
