@@ -35,10 +35,3 @@ export const Members = () => (
 )
 
 export default Members;
-
-
-/* //TODO:
- * fix jai aakash's card and suddu's card
- * add all members
- * put members in boxes and hae team name on the right
-*/
