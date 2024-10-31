@@ -14,8 +14,7 @@ const nextConfig = {
         // Enable build cache
         turbotrace: {
             enabled: true,
-        },
-        optimizeCss: true,
+        }
     },
     // not needed in static
     compress: false,
