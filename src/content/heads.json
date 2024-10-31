@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Aks Kanodia",
+        "role": "Tech Head",
+        "image": "/profiles/aks.jpg",
+        "linkedin": "https://www.linkedin.com",
+        "github": "https://www.github.com"
+    },
+    {
+        "name": "Bhavya Ahuja",
+        "role": "Corporate Head",
+        "image": "/profiles/bhavya.jpg",
+        "linkedin": "https://www.linkedin.com",
+        "github": "https://www.github.com"
+    },
+    {
+        "name": "Jai Aakash Gopalakrishnan",
+        "role": "Coordinator",
+        "image": "/profiles/jaiaakash.jpg",
+        "linkedin": "https://www.linkedin.com",
+        "github": "https://www.github.com"
+    },
+    {
+        "name": "Prajna Penmesta",
+        "role": "Marketing Head",
+        "image": "/profiles/prajna.jpg",
+        "linkedin": "https://www.linkedin.com",
+        "github": "https://www.github.com"
+    },
+    {
+        "name": "Vignesh Vembar",
+        "role": "Editing Head",
+        "image": "/profiles/nigvesh.jpg",
+        "linkedin": "https://www.linkedin.com",
+        "github": "https://www.github.com"
+    },
+    {
+        "name": "Sudershan Sarraf",
+        "role": "Events and Logistics Head",
+        "image": "/profiles/sudershan.jpg",
+        "linkedin": "https://www.linkedin.com",
+        "github": "https://www.github.com"
+    }
+]
