@@ -16,11 +16,6 @@ const nextConfig = {
             enabled: true,
         },
         optimizeCss: true,
-        modularizeImports: {
-            'react': {
-                transform: 'react/{{member}}'
-            }
-        },
     },
     // not needed in static
     compress: false,
