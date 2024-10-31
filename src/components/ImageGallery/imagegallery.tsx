@@ -23,7 +23,7 @@ const ImageGallery = ({ src, width, max }: ImageGalleryProps) => {
         };
 
         fetchImages();
-    }, [max]);
+    }, [max, src]);
 
     return (
         <div style={{ width }}>

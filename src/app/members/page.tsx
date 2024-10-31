@@ -3,7 +3,6 @@ import ProfileCard from "@/components/ProfileCard";
 import TeamDisplay from "@/components/TeamDisplay";
 import heads from "@/content/heads.json";
 import teams from "@/content/members.json";
-import Link from "next/link";
 
 const Section = dynamic(() => import("@/components/Section"), {
     ssr: false,

@@ -11,10 +11,10 @@ const TeamDisplay = ({ members, teamName }: TeamDisplayProps) => {
         <div className="bg-bgSecondary w-full h-full min-h-[200px] p-8 flex justify-between items-center">
             <div className="space-y-1">
                 {members.map((member, index) => (
-                    <div>
+                    <div key={index}>
                         {member.link
-                            ? <Link key={ index } href={ member.link } className='text-lg underline text-blue-300 hover:text-blue-400'>{ member.name }</Link>
-                            : <p key={ index } className='text-lg'>{ member.name }</p>
+                            ? <Link href={ member.link } className='text-lg underline text-blue-300 hover:text-blue-400'>{ member.name }</Link>
+                            : <p className='text-lg'>{ member.name }</p>
                         }
                     </div>
                 ))}
