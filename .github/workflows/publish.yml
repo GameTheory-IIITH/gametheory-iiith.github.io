@@ -42,6 +42,9 @@ jobs:
             with:
                 static_site_generator: next
 
+          - name: Generate images list 📄
+            run: npm run images-list
+
           - name: Build with Next.js 🏗️
             run: npx next build
 
