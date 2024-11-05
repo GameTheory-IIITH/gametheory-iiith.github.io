@@ -2,24 +2,12 @@
 "use client";
 import React from 'react';
 import dynamic from 'next/dynamic';
-
-const Link = dynamic(() => import('@/components/Link'), {
-  ssr: false,
-});
-
-const Button = dynamic(() => import('@/components/Button'), {
-  ssr: false,
-});
-
-const ImageText = dynamic(() => import('@/components/ImageText'), {
-  ssr: false,
-});
+import Link from '@/components/Link';
+import Button from '@/components/Button';
+import ImageText from '@/components/ImageText';
+import Section from '@/components/Section';
 
 const Parallax = dynamic(() => import('@/components/Parallax'), {
-  ssr: false,
-});
-
-const Section = dynamic(() => import('@/components/Section'), {
   ssr: false,
 });
 

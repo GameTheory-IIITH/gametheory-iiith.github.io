@@ -1,8 +1,5 @@
 import dynamic from "next/dynamic";
-
-const Section = dynamic(() => import("@/components/Section"), {
-    ssr: false,
-});
+import Section from "@/components/Section";
 
 const ImageGallery = dynamic(() => import("@/components/ImageGallery"), {
     ssr: false,

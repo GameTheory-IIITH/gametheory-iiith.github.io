@@ -1,10 +1,10 @@
 import dynamic from "next/dynamic";
-import ProfileCard from "@/components/ProfileCard";
 import TeamDisplay from "@/components/TeamDisplay";
+import Section from "@/components/Section";
 import heads from "@/content/heads.json";
 import teams from "@/content/members.json";
 
-const Section = dynamic(() => import("@/components/Section"), {
+const ProfileCard = dynamic(() => import("@/components/ProfileCard"), {
     ssr: false,
 });
 
