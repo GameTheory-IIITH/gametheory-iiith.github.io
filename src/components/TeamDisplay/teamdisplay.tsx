@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 
 interface TeamDisplayProps {
-    members: { name: string; link: string; }[];
+    members: { name: string; link?: string; }[];
     teamName: string;
 }
 
