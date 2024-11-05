@@ -1,17 +1,21 @@
-import React from 'react';
+import { useRouter } from 'next/router';
 import './button.css';
 
 interface ButtonProps {
-  onClick: () => void;
   text: string;
+  redirectTo: string;
 }
 
-export const Button: React.FC<ButtonProps> = ({ onClick, text }) => {
+export const Button = ({ text, redirectTo }: ButtonProps) => {
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push(redirectTo);
+  };
+
   return (
-    // <div className="flex justify-center container">
-      <button className="poker-button" onClick={onClick}>
-        <span className="button-text">{text}</span>
-      </button>
-    // </div>
+    <button className="poker-button" onClick={handleClick}>
+      <span className="button-text">{text}</span>
+    </button>
   );
 };

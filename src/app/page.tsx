@@ -70,7 +70,7 @@ const Main = () => {
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius ratione quae voluptate praesentium architecto tempore ut ipsum delectus tempora sit! Repellendus, delectus. Illum error doloremque eius magnam aperiam aliquam dolorum?
         
         <div className="flex justify-end mt-2">
-          <Link href="/join" showArrow>
+          <Link href="https://forms.gle/b3FtfsSFQmboAUoDA" showArrow>
             Join Us
           </Link>
         </div>
@@ -83,7 +83,7 @@ const Main = () => {
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, sit ipsum? Itaque accusantium perspiciatis nemo cupiditate fuga amet exercitationem, deleniti placeat a praesentium quod id reprehenderit distinctio molestiae consequatur atque.
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam animi quas doloribus at sunt officia dicta et minus ipsum. Impedit molestiae error atque nemo doloremque saepe provident officia animi quia?
           </p>
-          <Button onClick={() => console.log('Button clicked')} text="See All Events" />
+          <Button redirectTo='/events' text="See All Events" />
         </ImageText>
         
       </Section>
