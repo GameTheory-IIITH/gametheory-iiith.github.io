@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import dynamic from 'next/dynamic';
+import Navbar from "@/components/Navbar";
 
 const cinzel = localFont({
   src: "./fonts/CinzelVF.ttf",
@@ -16,10 +16,6 @@ export const metadata: Metadata = {
     icon: '/favicon.ico',
   }
 };
-
-const Navbar = dynamic(() => import('@/components/Navbar'), {
-  ssr: false,
-});
 
 export default function RootLayout({
   children,
