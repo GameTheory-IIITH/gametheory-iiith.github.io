@@ -3,10 +3,7 @@ import TeamDisplay from "@/components/TeamDisplay";
 import Section from "@/components/Section";
 import heads from "@/content/heads.json";
 import teams from "@/content/members.json";
-
-const ProfileCard = dynamic(() => import("@/components/ProfileCard"), {
-    ssr: false,
-});
+const ProfileCard = dynamic(() => import("@/components/ProfileCard"), { ssr: false });
 
 export const Members = () => (
     <div className="max-w-[874px] mx-auto">

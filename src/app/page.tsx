@@ -6,18 +6,9 @@ import Link from '@/components/Link';
 import Button from '@/components/Button';
 import ImageText from '@/components/ImageText';
 import Section from '@/components/Section';
-
-const Parallax = dynamic(() => import('@/components/Parallax'), {
-  ssr: false,
-});
-
-const ImageGallery = dynamic(() => import('@/components/ImageGallery'), {
-  ssr: false,
-});
-
-const FaInstagram = dynamic(() => import('react-icons/fa').then(mod => mod.FaInstagram), {
-  ssr: false,
-});
+const Parallax = dynamic(() => import('@/components/Parallax'), { ssr: false });
+const ImageGallery = dynamic(() => import('@/components/ImageGallery'), { ssr: false });
+const FaInstagram = dynamic(() => import('react-icons/fa').then(mod => mod.FaInstagram), { ssr: false });
 
 const Instagram = () => (
   <a href="https://www.instagram.com/gametheory_iiith" target="_blank" rel="noopener noreferrer" className="flex items-center no-underline">
