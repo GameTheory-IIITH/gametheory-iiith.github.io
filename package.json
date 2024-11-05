@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "json-server": "json-server --watch src/data/todos.json --port 3001"
+    "json-server": "json-server --watch src/data/todos.json --port 3001",
+    "images-list": "node scripts/images-list.js",
+    "prebuild": "npm run images-list"
   },
   "dependencies": {
     "next": "14.2.14",
