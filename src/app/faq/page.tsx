@@ -1,8 +1,40 @@
 import { ReactNode } from 'react';
+import At from '@/components/At';
+import faqs from '@/content/faqs.json';
+import Link from 'next/link';
 
 interface QuestionProps {
-    title: string;
+    title: ReactNode;
     children: ReactNode;
+}
+
+function parseContent(text: string): ReactNode[] {
+    const atParts = text.split('@');
+    const result: ReactNode[] = [];
+
+    atParts.forEach((part, index) => {
+        if (index > 0) {
+            result.push(<At key={`at-${index}`} />);
+        }
+        result.push(...replaceLinks(part, index));
+    });
+
+    return result;
+}
+
+function replaceLinks(text: string, keyPrefix: number): ReactNode[] {
+    const urlRegex = /(https?:\/\/[^\s]+)/g;
+    const parts = text.split(urlRegex);
+
+    return parts.map((part, index) =>
+        urlRegex.test(part) ? (
+            <Link key={`link-${keyPrefix}-${index}`} href={part} className='underline'>
+                {part}
+            </Link>
+        ) : (
+            part
+        )
+    );
 }
 
 const Question = ({ title, children }: QuestionProps) => (
@@ -19,18 +51,11 @@ export default function FAQs() {
                 <h1 className="text-4xl font-semibold mb-4 text-center">FAQs</h1>
                 <div className={`mb-4 text-justify`}>
                     <div className="space-y-12">
-                        <Question title="What is game theory?">
-                            Game theory is the study of mathematical models of strategic interaction among rational decision-makers. It has applications in various fields, including economics, political science, psychology, and computer science.
-                        </Question>
-                        <Question title="How is game theory used in economics?">
-                            In economics, game theory is used to model the behavior of individuals and firms in situations where their decisions affect each other. It helps in understanding competitive behaviors, market strategies, and the outcomes of different economic scenarios.
-                        </Question>
-                        <Question title="What are some common concepts in game theory?">
-                            Some common concepts in game theory include Nash equilibrium, dominant strategies, Pareto efficiency, and zero-sum games. These concepts help in analyzing and predicting the outcomes of strategic interactions.
-                        </Question>
-                        <Question title="Can game theory be applied to real-life situations?">
-                            Yes, game theory can be applied to various real-life situations, such as business negotiations, political campaigns, and social interactions. It provides a framework for understanding and predicting the behavior of individuals and groups in strategic settings.
-                        </Question>
+                        {faqs.map((faq, index) => (
+                            <Question key={index} title={parseContent(faq.question)}>
+                                {parseContent(faq.answer)}
+                            </Question>
+                        ))}
                     </div>
                 </div>
             </main>
