@@ -1,4 +1,4 @@
-import { useRouter } from 'next/router';
+import Link from 'next/link';
 import './button.css';
 
 interface ButtonProps {
@@ -7,15 +7,11 @@ interface ButtonProps {
 }
 
 export const Button = ({ text, redirectTo }: ButtonProps) => {
-  const router = useRouter();
-
-  const handleClick = () => {
-    router.push(redirectTo);
-  };
-
   return (
-    <button className="poker-button" onClick={handleClick}>
-      <span className="button-text">{text}</span>
-    </button>
+    <Link href={redirectTo}>
+      <button className="poker-button">
+        <span className="button-text">{text}</span>
+      </button>
+    </Link>
   );
 };
