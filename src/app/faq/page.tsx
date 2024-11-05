@@ -23,18 +23,29 @@ function parseContent(text: string): ReactNode[] {
 }
 
 function replaceLinks(text: string, keyPrefix: number): ReactNode[] {
-    const urlRegex = /(https?:\/\/[^\s]+)/g;
-    const parts = text.split(urlRegex);
+    const markdownLinkRegex = /\[([^\]]+)\]\((https?:\/\/[^\s]+)\)/g;
+    const parts = text.split(markdownLinkRegex);
 
-    return parts.map((part, index) =>
-        urlRegex.test(part) ? (
-            <Link key={`link-${keyPrefix}-${index}`} href={part} className='underline'>
-                {part}
-            </Link>
-        ) : (
-            part
-        )
-    );
+    const result: ReactNode[] = [];
+
+    for (let i = 0; i < parts.length; i += 3) {
+        const normalText = parts[i];
+        const linkText = parts[i + 1];
+        const linkUrl = parts[i + 2];
+
+        if (normalText) {
+            result.push(normalText);
+        }
+        if (linkText && linkUrl) {
+            result.push(
+                <Link key={`link-${keyPrefix}-${i}`} href={linkUrl} className='underline'>
+                    {linkText}
+                </Link>
+            );
+        }
+    }
+
+    return result;
 }
 
 const Question = ({ title, children }: QuestionProps) => (
