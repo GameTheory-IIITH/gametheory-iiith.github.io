@@ -5,7 +5,7 @@ import Link from '@/components/Link';
 import Button from '@/components/Button';
 import ImageText from '@/components/ImageText';
 import Section from '@/components/Section';
-import { AboutData, Announcement } from '@/types/content';
+import { AboutData, Announcement, GalleryData } from '@/types/content';
 const Parallax = dynamic(() => import('@/components/Parallax'), { ssr: false });
 const ImageGallery = dynamic(() => import('@/components/ImageGallery'), { ssr: false });
 const FaInstagram = dynamic(() => import('react-icons/fa').then(mod => mod.FaInstagram), { ssr: false });
@@ -13,6 +13,7 @@ const FaInstagram = dynamic(() => import('react-icons/fa').then(mod => mod.FaIns
 interface ClientHomePageProps {
   aboutData: AboutData;
   latestAnnouncement: Announcement | null;
+  galleryData: GalleryData;
 }
 
 const Instagram = ({ aboutData }: { aboutData: AboutData }) => (
@@ -21,7 +22,7 @@ const Instagram = ({ aboutData }: { aboutData: AboutData }) => (
   </a>
 );
 
-const Main = ({ aboutData, latestAnnouncement }: { aboutData: AboutData; latestAnnouncement: Announcement | null }) => {
+const Main = ({ aboutData, latestAnnouncement, galleryData }: { aboutData: AboutData; latestAnnouncement: Announcement | null; galleryData: GalleryData }) => {
   return (
     <div className="max-w-[874px] mx-auto">
       <Section title={aboutData.sections.gameTheory.title}>
@@ -68,7 +69,7 @@ const Main = ({ aboutData, latestAnnouncement }: { aboutData: AboutData; latestA
       </Section>
 
       <Section title={aboutData.sections.gallery.title}>
-        <ImageGallery src={aboutData.sections.gallery.galleryPath} width="100%" max={aboutData.sections.gallery.maxImages} />
+        <ImageGallery images={galleryData.images} width="100%" max={aboutData.sections.gallery.maxImages} />
         <div className="flex justify-end mt-2">
           <Link href={aboutData.sections.gallery.seeMoreLink.url} showArrow>
             {aboutData.sections.gallery.seeMoreLink.text}
@@ -94,7 +95,7 @@ const Main = ({ aboutData, latestAnnouncement }: { aboutData: AboutData; latestA
   );
 };
 
-export default function ClientHomePage({ aboutData, latestAnnouncement }: ClientHomePageProps) { 
+export default function ClientHomePage({ aboutData, latestAnnouncement, galleryData }: ClientHomePageProps) { 
   return (
     <div className="min-h-screen relative">
 
@@ -104,7 +105,7 @@ export default function ClientHomePage({ aboutData, latestAnnouncement }: Client
       </Parallax>
 
       <div className="pb-24"> {/* Add bottom padding to prevent footer overlap */}
-        <Main aboutData={aboutData} latestAnnouncement={latestAnnouncement} />
+        <Main aboutData={aboutData} latestAnnouncement={latestAnnouncement} galleryData={galleryData} />
       </div>
 
       <footer className="p-4 mt-8 text-center fixed bottom-0 left-0 w-full z-50" style={{background: "rgb(var(--bg-secondary))"}}>

@@ -106,3 +106,13 @@ export interface FAQ {
   question: string;
   answer: string;
 }
+
+export interface GalleryImage {
+  url: string;
+  alt: string;
+}
+
+export interface GalleryData {
+  title: string;
+  images: GalleryImage[];
+}

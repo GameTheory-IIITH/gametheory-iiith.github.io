@@ -1,7 +1,7 @@
 // src/app/page.js
 import React from 'react';
 import { loadYamlContent } from '@/lib/yaml-loader';
-import { AboutData, Announcement } from '@/types/content';
+import { AboutData, Announcement, GalleryData } from '@/types/content';
 import ClientHomePage from './ClientHomePage';
 
 // Helper function to get latest announcement
@@ -20,12 +20,14 @@ const getLatestAnnouncement = () => {
 
 export default function Home() {
   const aboutData = loadYamlContent('about.yaml') as AboutData;
+  const galleryData = loadYamlContent('gallery.yaml') as GalleryData;
   const latestAnnouncement = getLatestAnnouncement();
   
   return (
     <ClientHomePage 
       aboutData={aboutData} 
-      latestAnnouncement={latestAnnouncement} 
+      latestAnnouncement={latestAnnouncement}
+      galleryData={galleryData}
     />
   );
 }

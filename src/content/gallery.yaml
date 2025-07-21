@@ -1,0 +1,55 @@
+title: Gallery
+images:
+  - url: /images/gallery/event.jpg
+    alt: Event image
+  - url: /images/gallery/IMG-20241106-WA0008.jpg
+    alt: Gallery image 1
+  - url: /images/gallery/IMG-20241106-WA0009.jpg
+    alt: Gallery image 2
+  - url: /images/gallery/IMG-20241106-WA0010.jpg
+    alt: Gallery image 3
+  - url: /images/gallery/IMG-20241106-WA0011.jpg
+    alt: Gallery image 4
+  - url: /images/gallery/IMG-20241106-WA0012.jpg
+    alt: Gallery image 5
+  - url: /images/gallery/IMG-20241106-WA0013.jpg
+    alt: Gallery image 6
+  - url: /images/gallery/IMG-20241106-WA0014.jpg
+    alt: Gallery image 7
+  - url: /images/gallery/IMG-20241106-WA0015.jpg
+    alt: Gallery image 8
+  - url: /images/gallery/IMG-20241106-WA0016.jpg
+    alt: Gallery image 9
+  - url: /images/gallery/IMG-20241106-WA0017.jpg
+    alt: Gallery image 10
+  - url: /images/gallery/IMG-20241106-WA0018.jpg
+    alt: Gallery image 11
+  - url: /images/gallery/IMG-20241106-WA0019.jpg
+    alt: Gallery image 12
+  - url: /images/gallery/IMG-20241106-WA0020.jpg
+    alt: Gallery image 13
+  - url: /images/gallery/IMG-20241106-WA0021.jpg
+    alt: Gallery image 14
+  - url: /images/gallery/IMG-20241106-WA0022.jpg
+    alt: Gallery image 15
+  - url: /images/gallery/IMG-20241106-WA0023.jpg
+    alt: Gallery image 16
+  - url: /images/gallery/IMG-20241106-WA0024.jpg
+    alt: Gallery image 17
+  - url: /images/gallery/IMG-20241106-WA0025.jpg
+    alt: Gallery image 18
+  - url: /images/gallery/IMG-20241106-WA0026.jpg
+    alt: Gallery image 19
+  - url: /images/gallery/IMG-20241106-WA0027.jpg
+    alt: Gallery image 20
+  - url: /images/gallery/IMG-20241106-WA0028.jpg
+    alt: Gallery image 21
+# External placeholder images for demo purposes
+  - url: https://images.unsplash.com/photo-1472491235688-bdc81a63246e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxfHxjYXR8ZW58MHwwfHx8MTcyMTgyMjE3OXww&ixlib=rb-4.0.3&q=80&w=1080
+    alt: Cat placeholder 1
+  - url: https://images.unsplash.com/photo-1478098711619-5ab0b478d6e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw1fHxjYXR8ZW58MHwwfHx8MTcyMTgyMjE3OXww&ixlib=rb-4.0.3&q=80&w=1080
+    alt: Cat placeholder 2
+  - url: https://images.unsplash.com/photo-1668491195456-9341d9cf3977?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxfHxjYXQlMjB3aGl0ZXxlbnwwfDF8fHwxNzIxODIyMzU3fDA&ixlib=rb-4.0.3&q=80&w=1080
+    alt: Cat placeholder 3
+  - url: https://images.unsplash.com/photo-1515002246390-7bf7e8f87b54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxM3x8Y2F0fGVufDB8MHx8fDE3MjE4MjIxNzl8MA&ixlib=rb-4.0.3&q=80&w=1080
+    alt: Cat placeholder 4

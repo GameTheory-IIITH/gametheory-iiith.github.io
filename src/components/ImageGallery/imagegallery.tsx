@@ -1,41 +1,33 @@
 "use client";
 
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Image from 'next/image';
+import { GalleryImage } from '@/types/content';
 
 interface ImageGalleryProps {
-    src: string;
+    images: GalleryImage[];
     width: string;
     max?: number;
 }
 
-const ImageGallery = ({ src, width, max }: ImageGalleryProps) => {
-    const [images, setImages] = useState<string[]>([]);
+const ImageGallery = ({ images, width, max }: ImageGalleryProps) => {
     const [selected, setSelected] = useState<string | null>(null);
 
-    useEffect(() => {
-        const fetchImages = async () => {
-            const response = await fetch(`${src}/images.txt`);
-            const text = await response.text();
-            const staticImages = text.split('\n').filter(name => name.trim() !== '').map(name => `${name.trim()}`);
-            const limitedImages = max ? staticImages.slice(0, max) : staticImages;
-            setImages(limitedImages);
-        };
-        fetchImages();
-    }, [max, src]);
+    // Apply max limit if specified
+    const displayImages = max ? images.slice(0, max) : images;
 
     return (
         <div style={{ width }}>
             <div className={`columns-2 gap-5 sm:columns-2 sm:gap-8 md:columns-3 lg:columns-3 [&>img:not(:first-child)]:mt-8`}>
-                {images.map((imgSrc, index) => (
+                {displayImages.map((image, index) => (
                     <Image 
                         key={index}
-                        src={imgSrc} 
-                        alt={`Image ${index}`} 
+                        src={image.url} 
+                        alt={image.alt} 
                         width={300} 
                         height={200}
                         className="transition duration-300 ease-in-out transform hover:scale-105 cursor-pointer"
-                        onClick={() => setSelected(imgSrc)}
+                        onClick={() => setSelected(image.url)}
                     />
                 ))}
             </div>
