@@ -1,34 +1,34 @@
 - name: Jai Aakash Gopalakrishnan
   head: true
-  image: /profiles/jaiaakash.png
+  image: https://cdn.jsdelivr.net/gh/gametheory-iiith/gametheory-iiith.github.io@main/public/profiles/jaiaakash.png
   url: https://www.linkedin.com
   designation: Coordinator, Co-founder
   team: leadership
 
 - name: Sudershan Sarraf
   head: true
-  image: /profiles/sudershan.png
+  image: https://cdn.jsdelivr.net/gh/gametheory-iiith/gametheory-iiith.github.io@main/public/profiles/sudershan.png
   url: https://www.linkedin.com
   designation: Events Head
   team: Events
 
 - name: Prajna Penmesta
   head: true
-  image: /profiles/prajna.png
+  image: https://cdn.jsdelivr.net/gh/gametheory-iiith/gametheory-iiith.github.io@main/public/profiles/prajna.png
   url: https://www.linkedin.com
   designation: Marketing Head
   team: Marketing
 
 - name: Bhavya Ahuja
   head: true
-  image: /profiles/bhavya.jpg
+  image: https://cdn.jsdelivr.net/gh/gametheory-iiith/gametheory-iiith.github.io@main/public/profiles/bhavya.jpg
   url: https://www.linkedin.com
   designation: Corporate Head
   team: Corporate
 
 # - name: Vignesh Vembar
 #   head: true
-#   image: /profiles/nigvesh.jpg
+#   image: https://cdn.jsdelivr.net/gh/gametheory-iiith/gametheory-iiith.github.io@main/public/profiles/nigvesh.jpg
 #   url: https://www.linkedin.com
 #   designation: Editing Head
 #   team: Editing
@@ -41,7 +41,7 @@
 
 - name: Aks Kanodia
   head: false
-  # image: /profiles/aks.jpg
+  # image: https://cdn.jsdelivr.net/gh/gametheory-iiith/gametheory-iiith.github.io@main/public/profiles/aks.jpg
   url: https://www.linkedin.com
   designation: Member
   team: Tech
