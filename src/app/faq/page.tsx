@@ -1,6 +1,7 @@
 import { ReactNode } from 'react';
 import At from '@/components/At';
-import faqs from '@/content/faqs.json';
+import { loadYamlContent } from '@/lib/yaml-loader';
+import { FAQ } from '@/types/content';
 import Link from 'next/link';
 
 interface QuestionProps {
@@ -54,6 +55,8 @@ const Question = ({ title, children }: QuestionProps) => (
         <p>{children}</p>
     </div>
 );
+
+const faqs = loadYamlContent('faqs.yaml') as FAQ[];
 
 export default function FAQs() {
     return (

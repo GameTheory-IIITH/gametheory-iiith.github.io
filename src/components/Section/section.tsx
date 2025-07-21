@@ -9,7 +9,7 @@ interface SectionProps {
 export const Section = ({ title, children, className }: SectionProps) => { 
   return (
     <main className="container mx-auto mt-8 p-4" id={title.replace(" ", "-")}>
-      <h2 className="text-2xl font-semibold mb-4 text-center">{ title }</h2>
+      <h2 className="text-4xl font-semibold mb-8 text-center">{ title }</h2>
       <div className={`mb-4 text-justify ${className}`}>
         { children }
       </div>

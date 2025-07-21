@@ -1,0 +1,52 @@
+hero:
+  title: "Game Theory<br/><span style=\"font-family: serif, 'Times New Roman', Times\">@</span>IIITH"
+  subtitle: "A chip and a chair."
+  parallaxImage: "/images/event.png"
+
+sections:
+  gameTheory:
+    title: "About"
+    content: |
+      Welcome to Game Theory@IIITH—where strategy comes to life! We're a passionate student-driven community that dives deep into the real-world power of game theory through hands-on experience, and smart play.
+
+      At the core of what we do is Poker—our favorite battleground for testing wits, reading minds, and mastering strategic decision-making. But we don't stop there. From thrilling poker tournaments to high-energy strategizing events, expert-led talks, and immersive workshops, we're all about learning by doing.
+
+      We also bring in a range of game-theoretic strategy games that are both fun and intellectually rewarding—perfect for anyone who loves a good challenge and wants to think sharper, faster, and smarter.
+
+      Whether you're a seasoned strategist or just getting curious, there's a seat at the table for you. Come explore, compete, and discover how game theory can shape the way you think—in games, in business, and in life.
+    joinLink:
+      url: "https://forms.gle/b3FtfsSFQmboAUoDA"
+      text: "Join Us"
+
+  announcements:
+    title: "Announcements"
+    fallbackContent:
+      text: |
+            Join us for exciting poker tournaments every Wednesday. Whether you're a beginner or seasoned player, there's a seat at our table for you! Come experience the thrill of competitive poker in a friendly, educational environment.
+      image: "/images/placeholder.png"
+      imageAlt: "Poker"
+    seeAllButton:
+      url: "/announcements"
+      text: "See All Announcements"
+
+  gallery:
+    title: "Gallery"
+    galleryPath: "/images/gallery"
+    maxImages: 5
+    seeMoreLink:
+      url: "/gallery"
+      text: "See more"
+
+  contact:
+    title: "Contact Us"
+    email: "gametheoryiiith@gmail.com"
+    instagram:
+      url: "https://www.instagram.com/gametheory_iiith"
+      handle: "gametheory_iiith"
+    linkedin:
+      url: "https://www.linkedin.com/company/gametheory-iiith/"
+      text: "LinkedIn"
+
+footer:
+  copyright: "© 2024 Game Theory@IIITH. All rights reserved."
+  disclaimer: "GameTheory@IIIT does not support any form of gambling on campus. Any form of gambling or cash game is prohibited."

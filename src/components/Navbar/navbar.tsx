@@ -42,7 +42,7 @@ export const Navbar = () => {
             </div>
             <Rightitem className={isOpen ? 'justify-end w-full space-y-8 py-4 text-right mr-8' : 'hidden'}>
                 <Navitem href="/#Game-Theory">About</Navitem>
-                <Navitem href="/events">Events</Navitem>
+                <Navitem href="/announcements">Announcements</Navitem>
                 <Navitem href="/gallery">Gallery</Navitem>
                 <Navitem href="/members">Members</Navitem>
                 <Navitem href="/faq">FAQ</Navitem>

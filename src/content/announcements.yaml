@@ -1,0 +1,58 @@
+- id: wednesday-night-poker
+  title: Wednesday Night Poker
+  description: |
+    Join us for exciting poker tournaments every Wednesday. Whether you're a beginner or seasoned player, there's a seat at our table for you! Come experience the thrill of competitive poker in a friendly, educational environment.
+  dateTime:
+    type: recurring
+    startTime: "20:30"
+    endTime: "23:30"
+    dayOfWeek: Wednesday
+    timezone: IST
+  location:
+    venue: H-103
+    address: IIIT Hyderabad
+    isOnline: false
+  image:
+    url: /images/placeholder.png
+    alt: Poker
+    position: left
+  published: true
+  publishDate: "2024-09-01"
+
+# - id: game-theory-workshop
+#   title: Introduction to Game Theory Workshop
+#   description: |
+#     Learn the fundamentals of game theory and strategic thinking. This workshop covers Nash equilibrium, optimal strategies, and real-world applications. Perfect for students interested in economics, mathematics, and strategic decision-making.
+#   dateTime:
+#     type: single
+#     startDateTime: "2024-12-15T14:00:00"
+#     endDateTime: "2024-12-15T17:00:00"
+#     timezone: IST
+#   location:
+#     venue: Lecture Hall 1
+#     address: IIIT Hyderabad
+#     isOnline: false
+#   button:
+#     text: Join Workshop
+#     url: https://forms.gle/workshop123
+#     style: secondary
+#     external: true
+#   published: true
+#   publishDate: "2024-11-01"
+
+# - id: club-membership-open
+#   title: Club Membership Applications Open
+#   description: |
+#     We're excited to announce that applications for Game Theory@IIITH membership are now open! Join our community of strategic thinkers and game enthusiasts. No prior experience required - just bring your curiosity and enthusiasm for learning.
+#   dateTime:
+#     type: deadline
+#     deadlineDateTime: "2024-10-30T23:59:00"
+#     timezone: IST
+#     displayText: Applications close October 30th, 2024
+#   button:
+#     text: Apply Now
+#     url: https://forms.gle/applynow
+#     style: primary
+#     external: true
+#   published: true
+#   publishDate: "2024-10-01"

@@ -11,6 +11,8 @@
     "images-list": "node scripts/images-list.js"
   },
   "dependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "js-yaml": "^4.1.0",
     "next": "14.2.14",
     "react": "^18",
     "react-dom": "^18",

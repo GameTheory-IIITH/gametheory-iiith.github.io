@@ -1,0 +1,144 @@
+- name: Jai Aakash Gopalakrishnan
+  head: true
+  image: /profiles/jaiaakash.png
+  url: https://www.linkedin.com
+  designation: Coordinator, Co-founder
+  team: leadership
+
+- name: Sudershan Sarraf
+  head: true
+  image: /profiles/sudershan.png
+  url: https://www.linkedin.com
+  designation: Events Head
+  team: Events
+
+- name: Prajna Penmesta
+  head: true
+  image: /profiles/prajna.png
+  url: https://www.linkedin.com
+  designation: Marketing Head
+  team: Marketing
+
+- name: Bhavya Ahuja
+  head: true
+  image: /profiles/bhavya.jpg
+  url: https://www.linkedin.com
+  designation: Corporate Head
+  team: Corporate
+
+# - name: Vignesh Vembar
+#   head: true
+#   image: /profiles/nigvesh.jpg
+#   url: https://www.linkedin.com
+#   designation: Editing Head
+#   team: Editing
+
+- name: Abhyudit Singh
+  head: true
+  url: https://www.github.com/bitmap4
+  designation: Tech Head
+  team: Tech
+
+- name: Aks Kanodia
+  head: false
+  # image: /profiles/aks.jpg
+  url: https://www.linkedin.com
+  designation: Member
+  team: Tech
+
+- name: Lohith Kola
+  head: false
+  url: https://www.github.com/lohithkola06
+  designation: Member
+  team: Tech
+
+- name: Venkata Naga Sai Kaushik Yadala
+  head: false
+  url: https://www.github.com/kaushik-yadala
+  designation: Member
+  team: Tech
+
+- name: Agyeya Singh Negi
+  head: false
+  designation: Member
+  team: Events
+
+- name: Pritika Sinharay
+  head: false
+  designation: Member
+  team: Events
+
+- name: Abhiroop Pullepu
+  head: false
+  designation: Member
+  team: Events
+
+- name: Kavish Vora
+  head: false
+  designation: Member
+  team: Events
+
+- name: Revan Reddy Pedaballi
+  head: false
+  designation: Member
+  team: Events
+
+- name: Kartik Thapa
+  head: false
+  designation: Member
+  team: Events
+
+- name: Aakarsh Mishra
+  head: false
+  designation: Member
+  team: Marketing
+
+- name: Lakshya Jindal
+  head: false
+  designation: Member
+  team: Marketing
+
+- name: Garima Mittal
+  head: false
+  designation: Member
+  team: Marketing
+
+- name: Joshita Dhanireddy
+  head: false
+  designation: Member
+  team: Marketing
+
+- name: Dhruv Bansal
+  head: false
+  designation: Member
+  team: Marketing
+
+- name: Vedant Tejas
+  head: false
+  designation: Member
+  team: Corporate
+
+- name: Naman Singhal
+  head: false
+  designation: Member
+  team: Corporate
+
+- name: Akshat Gupta
+  head: false
+  designation: Member
+  team: Corporate
+
+- name: Devansh Varshney
+  head: false
+  designation: Member
+  team: Corporate
+
+- name: Aryan Chaudhary
+  head: false
+  designation: Member
+  team: Corporate
+
+- name: Aaryan Kashyap
+  head: false
+  designation: Member
+  team: Editing
