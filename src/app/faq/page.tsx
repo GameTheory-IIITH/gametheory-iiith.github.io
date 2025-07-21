@@ -1,5 +1,4 @@
 import { ReactNode } from 'react';
-import At from '@/components/At';
 import { loadYamlContent } from '@/lib/yaml-loader';
 import { FAQ } from '@/types/content';
 import Link from 'next/link';
@@ -15,7 +14,7 @@ function parseContent(text: string): ReactNode[] {
 
     atParts.forEach((part, index) => {
         if (index > 0) {
-            result.push(<At key={`at-${index}`} />);
+            result.push(<span key={`at-${index}`} style={{ fontFamily: "serif, 'Times New Roman', Times" }}>@</span>);
         }
         result.push(...replaceLinks(part, index));
     });

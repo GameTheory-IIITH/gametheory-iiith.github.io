@@ -5,7 +5,6 @@ import Link from '@/components/Link';
 import Button from '@/components/Button';
 import ImageText from '@/components/ImageText';
 import Section from '@/components/Section';
-import At from '@/components/At';
 import { AboutData, Announcement } from '@/types/content';
 const Parallax = dynamic(() => import('@/components/Parallax'), { ssr: false });
 const ImageGallery = dynamic(() => import('@/components/ImageGallery'), { ssr: false });
