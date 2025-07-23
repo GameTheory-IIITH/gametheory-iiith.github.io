@@ -18,15 +18,16 @@ const ImageGallery = ({ images, width, max }: ImageGalleryProps) => {
 
     return (
         <div style={{ width }}>
-            <div className={`columns-2 gap-5 sm:columns-2 sm:gap-8 md:columns-3 lg:columns-3 [&>img:not(:first-child)]:mt-8`}>
-                {displayImages.map((image, index) => (
+            {/* Use flexbox to center the single column on mobile, then switch back to a multi-column layout on larger screens. */}
+            <div className="flex flex-col items-center sm:block sm:columns-2 sm:gap-8 md:columns-3">
+                {displayImages.map((image) => (
                     <Image 
-                        key={index}
+                        key={image.url} // Use a stable, unique key like the image URL instead of the index.
                         src={image.url} 
                         alt={image.alt} 
-                        width={300} 
+                        width={400} 
                         height={200}
-                        className="transition duration-300 ease-in-out transform hover:scale-105 cursor-pointer"
+                        className="mb-8 break-inside-avoid object-cover transition duration-300 ease-in-out transform md:hover:scale-105 cursor-pointer"
                         onClick={() => setSelected(image.url)}
                     />
                 ))}

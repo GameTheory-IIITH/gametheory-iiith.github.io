@@ -1,8 +1,7 @@
-import dynamic from "next/dynamic";
-import Section from "@/components/Section";
 import { loadYamlContent } from "@/lib/yaml-loader";
 import { GalleryData } from "@/types/content";
-const ImageGallery = dynamic(() => import("@/components/ImageGallery"), { ssr: false });
+import Section from "@/components/Section";
+import ClientGallery from "./ClientGallery";
 
 export default function Gallery() {
     const galleryData = loadYamlContent('gallery.yaml') as GalleryData;
@@ -10,7 +9,11 @@ export default function Gallery() {
     return (
         <div className="max-w-[874px] mx-auto">
             <Section title={galleryData.title}>
-                <ImageGallery images={galleryData.images} width="100%" />
+                <ClientGallery 
+                    images={galleryData.images}
+                    initialLoad={10}
+                    loadMoreCount={10}
+                />
             </Section>
         </div>
     );
