@@ -1,48 +1,48 @@
 - name: Jai Aakash Gopalakrishnan
   head: true
-  image: https://cdn.jsdelivr.net/gh/gametheory-iiith/gametheory-iiith.github.io@main/public/profiles/jaiaakash.png
+  image: https://cdn.jsdelivr.net/gh/gametheory-iiith/gametheory-iiith.github.io@main/public/profiles/jaiaakash.webp
   url: https://www.linkedin.com
   designation: Coordinator, Co-founder
   team: leadership
 
 - name: Sudershan Sarraf
   head: true
-  image: https://cdn.jsdelivr.net/gh/gametheory-iiith/gametheory-iiith.github.io@main/public/profiles/sudershan.png
+  image: https://cdn.jsdelivr.net/gh/gametheory-iiith/gametheory-iiith.github.io@main/public/profiles/sudershan.webp
   url: https://www.linkedin.com
   designation: Events Head
   team: Events
 
 - name: Prajna Penmesta
   head: true
-  image: https://cdn.jsdelivr.net/gh/gametheory-iiith/gametheory-iiith.github.io@main/public/profiles/prajna.png
+  image: https://cdn.jsdelivr.net/gh/gametheory-iiith/gametheory-iiith.github.io@main/public/profiles/prajna.webp
   url: https://www.linkedin.com
   designation: Marketing Head
   team: Marketing
 
 - name: Bhavya Ahuja
   head: true
-  image: https://cdn.jsdelivr.net/gh/gametheory-iiith/gametheory-iiith.github.io@main/public/profiles/bhavya.png
+  image: https://cdn.jsdelivr.net/gh/gametheory-iiith/gametheory-iiith.github.io@main/public/profiles/bhavya.webp
   url: https://www.linkedin.com
   designation: Corporate Head
   team: Corporate
 
 # - name: Vignesh Vembar
 #   head: true
-#   image: https://cdn.jsdelivr.net/gh/gametheory-iiith/gametheory-iiith.github.io@main/public/profiles/nigvesh.jpg
+#   image: https://cdn.jsdelivr.net/gh/gametheory-iiith/gametheory-iiith.github.io@main/public/profiles/nigvesh.webp
 #   url: https://www.linkedin.com
 #   designation: Editing Head
 #   team: Editing
 
 - name: Abhyudit Singh
   head: true
-  image: https://cdn.jsdelivr.net/gh/gametheory-iiith/gametheory-iiith.github.io@main/public/profiles/abhyudit.png
+  image: https://cdn.jsdelivr.net/gh/gametheory-iiith/gametheory-iiith.github.io@main/public/profiles/abhyudit.webp
   url: https://www.github.com/bitmap4
   designation: Tech Head
   team: Tech
 
 - name: Aks Kanodia
   head: false
-  # image: https://cdn.jsdelivr.net/gh/gametheory-iiith/gametheory-iiith.github.io@main/public/profiles/aks.jpg
+  # image: https://cdn.jsdelivr.net/gh/gametheory-iiith/gametheory-iiith.github.io@main/public/profiles/aks.webp
   url: https://www.linkedin.com
   designation: Member
   team: Tech
@@ -86,7 +86,7 @@
 
 - name: Kartik Thapa
   head: false
-  image: https://cdn.jsdelivr.net/gh/gametheory-iiith/gametheory-iiith.github.io@main/public/profiles/thapa.png
+  image: https://cdn.jsdelivr.net/gh/gametheory-iiith/gametheory-iiith.github.io@main/public/profiles/thapa.webp
   designation: Member
   team: Events
 

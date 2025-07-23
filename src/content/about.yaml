@@ -1,7 +1,7 @@
 hero:
   title: "Game Theory<br/><span style=\"font-family: serif, 'Times New Roman', Times\">@</span>IIITH"
   subtitle: "A chip and a chair."
-  parallaxImage: "https://cdn.jsdelivr.net/gh/gametheory-iiith/gametheory-iiith.github.io@main/public/images/event.png"
+  parallaxImage: "https://cdn.jsdelivr.net/gh/gametheory-iiith/gametheory-iiith.github.io@main/public/images/event.webp"
 
 sections:
   gameTheory:
@@ -23,7 +23,7 @@ sections:
     fallbackContent:
       text: |
             Join us for exciting poker tournaments every Wednesday. Whether you're a beginner or seasoned player, there's a seat at our table for you! Come experience the thrill of competitive poker in a friendly, educational environment.
-      image: "https://cdn.jsdelivr.net/gh/gametheory-iiith/gametheory-iiith.github.io@main/public/images/placeholder.png"
+      image: "https://cdn.jsdelivr.net/gh/gametheory-iiith/gametheory-iiith.github.io@main/public/images/placeholder.webp"
       imageAlt: "Poker"
     seeAllButton:
       url: "/announcements"

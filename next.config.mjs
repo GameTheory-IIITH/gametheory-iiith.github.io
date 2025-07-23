@@ -2,8 +2,15 @@
 const nextConfig = {
     swcMinify: true,
     images: {
-        domains: ['images.unsplash.com'],
-        unoptimized: true, // not needed in static
+        unoptimized: true,
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'cdn.jsdelivr.net', // Or your actual CDN hostname
+                port: '',
+                pathname: '/**', // Or a more specific path if you want
+            },
+        ],
     },
     output: "export", // static
     reactStrictMode: false, // only in development

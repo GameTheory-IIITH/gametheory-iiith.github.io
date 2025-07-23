@@ -13,7 +13,7 @@
     address: IIIT Hyderabad
     isOnline: false
   image:
-    url: https://cdn.jsdelivr.net/gh/gametheory-iiith/gametheory-iiith.github.io@main/public/images/placeholder.png
+    url: https://cdn.jsdelivr.net/gh/gametheory-iiith/gametheory-iiith.github.io@main/public/images/placeholder.webp
     alt: Poker
     position: left
   published: true
