@@ -2,21 +2,21 @@
   head: true
   image: https://cdn.jsdelivr.net/gh/gametheory-iiith/gametheory-iiith.github.io@latest/public/profiles/jaiaakash.webp
   url: https://www.linkedin.com
-  designation: Coordinator, Co-founder
+  designation: Coordinator
   team: leadership
 
 - name: Sudershan Sarraf
   head: true
   image: https://cdn.jsdelivr.net/gh/gametheory-iiith/gametheory-iiith.github.io@latest/public/profiles/sudershan.webp
   url: https://www.linkedin.com
-  designation: Events Head, Co-founder
+  designation: Events Head
   team: Events
 
 - name: Prajna Penmesta
   head: true
   image: https://cdn.jsdelivr.net/gh/gametheory-iiith/gametheory-iiith.github.io@latest/public/profiles/prajna.webp
   url: https://www.linkedin.com
-  designation: Marketing Head, Co-founder
+  designation: Marketing Head
   team: Marketing
 
 - name: Bhavya Ahuja
